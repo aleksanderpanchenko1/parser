@@ -38,7 +38,7 @@ echo "<br>";
 echo "Open:".$float_open1;
 echo "<br><hr>";
 
-function getArraysUserDepFromPortal($float_fts,$float_open,$percent) {
+function insertinfo($float_fts,$float_open,$percent) {
 $serverName = "localhost";
     $database = "shop";
     $uid = 'root';
@@ -64,7 +64,7 @@ $link="sqlsrv:server=$serverName;Database=$database";
 			}	
 	
 }
-getArraysUserDepFromPortal($float_fts,$float_open,$percent);
+insertinfo($float_fts,$float_open,$percent);
 
 
 
